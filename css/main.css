@@ -1,0 +1,14 @@
+body {
+  background-color: #e9ed9a;
+}
+
+.navList {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.navlist li {
+  display: inline-block;
+  margin-right: 10px;
+}

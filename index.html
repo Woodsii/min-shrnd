@@ -15,6 +15,13 @@
 
   <body>
     <div
+      id="nav"
+      hx-get="./header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></div>
+
+    <div
       id="page-content"
       hx-get="./home.html"
       hx-trigger="load"
