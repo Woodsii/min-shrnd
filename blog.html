@@ -2,12 +2,13 @@
   <p>The coolest blog ever seen</p>
   <ul id="blog-posts">
     <li
-      hx-get="./blog/test.html"
-      hx-trigger="click"
-      hx-swap="innerHTML"
-      hx-target="#page-content"
+      fx-action="/blog/test.html"
+      fx-trigger="click"
+      fx-method="get"
+      fx-swap="innerHTML"
+      fx-target="#page-content"
     >
-      test
+      Test Post - 11/4/2025
     </li>
   </ul>
 </div>

@@ -35,10 +35,11 @@
   </div>
   <div class="blogpost-footer">
     <p
-      hx-get="/blog.html"
-      hx-trigger="click"
-      hx-swap="innerHTML"
-      hx-target="#page-content"
+      fx-action="/blog.html"
+      fx-method="get"
+      fx-trigger="click"
+      fx-swap="innerHTML"
+      fx-target="#page-content"
     >
       ← back to all posts
     </p>

@@ -1,16 +1,58 @@
 body {
   background-color: #e9ed9a;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
 }
 
+/* SNOW! - eventually my love...
+@keyframes snowflakes-falling {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.snowflake {
+  position: fixed;
+  pointer-events: none;
+  animation-name: snowflakes-falling;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+
+  --seed: 0;
+  --random-offset: calc(sin(var(--seed) * 0.1) * 50px);
+  transform: translateX(var(--random-offset));
+}
+
+<div class="snow-container">
+  <span class="snowflake">*</span>
+  <span class="snowflake">.</span>
+  <span class="snowflake">o</span>
+</div>
+*/
+
+/* Header */
+
 #nav-list {
-  list-style-type: none; /* Removes default bullet points */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 #nav-list li {
   display: inline-block;
   margin-right: 0.7rem;
+  text-decoration: underline;
+}
+
+#nav-list li:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #header {
@@ -35,13 +77,13 @@ body {
   margin-top: 0.5rem;
 }
 
-/* HOME PAGE STYLING */
+/* Home page */
 
 #home {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 3rem;
 }
 
@@ -49,4 +91,11 @@ body {
   margin: auto;
   padding: auto;
   justify-content: left;
+}
+
+/* Ascii Footer */
+#ascii-footer {
+  flex: 0 1 auto;
+  width: 100%;
+  /* height: 15rem; */
 }

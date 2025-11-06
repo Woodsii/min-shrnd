@@ -5,12 +5,8 @@
     <title>shrnd</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
 
-    <!-- HTMX -->
-    <script
-      src="https://unpkg.com/htmx.org@2.0.4"
-      integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Fixi.js -->
+    <script src="/vendor/fixi-0.9.2.js"></script>
   </head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,16 +14,18 @@
   <body>
     <div
       id="nav"
-      hx-get="./header.html"
-      hx-trigger="load"
-      hx-swap="outerHTML"
+      fx-action="/header.html"
+      fx-trigger="fx:inited"
+      fx-swap="outerHTML"
     ></div>
 
     <div
       id="page-content"
-      hx-get="./home.html"
-      hx-trigger="load"
-      hx-swap="innerHTML"
+      fx-action="/home.html"
+      fx-trigger="fx:inited"
+      fx-swap="innerHTML"
     ></div>
+
+    <div id="ascii-footer"></div>
   </body>
 </html>
