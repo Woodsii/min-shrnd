@@ -10,7 +10,7 @@ body {
 
 #nav-list li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 0.7rem;
 }
 
 #header {
@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5vh;
+  margin-top: 5rem;
 }
 
 #header * {
@@ -28,20 +28,25 @@ body {
 #page-content {
   margin-left: 30%;
   margin-right: 30%;
-  margin-top: 5vh;
+  margin-top: 2rem;
 }
 
 #page-content * {
-  margin-top: 0.5vh;
+  margin-top: 0.5rem;
 }
 
-#body {
+/* HOME PAGE STYLING */
+
+#home {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 3rem;
 }
 
 #ascii-scene {
   margin: auto;
   padding: auto;
-  justify-content: lefts;
+  justify-content: left;
 }
