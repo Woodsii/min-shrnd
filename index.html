@@ -15,25 +15,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <body>
-    <div
-      id="nav"
-      fx-action="/header.html"
-      fx-trigger="fx:inited"
-      fx-swap="outerHTML"
-    ></div>
+    <div id="wrapper">
+      <header
+        id="nav"
+        fx-action="/header.html"
+        fx-trigger="fx:inited"
+        fx-swap="outerHTML"
+      ></header>
 
-    <div
-      id="page-content"
-      fx-action="/home.html"
-      fx-trigger="fx:inited"
-      fx-swap="innerHTML"
-    ></div>
+      <div
+        id="page-content"
+        fx-action="/home.html"
+        fx-trigger="fx:inited"
+        fx-swap="innerHTML"
+      ></div>
 
-    <div
-      id="ascii-footer"
-      fx-action="/footer.html"
-      fx-trigger="fx:inited"
-      fx-swap="innerHTML"
-    ></div>
+      <footer
+        id="footer"
+        fx-action="/footer.html"
+        fx-trigger="fx:inited"
+        fx-swap="innerHTML"
+      ></footer>
+    </div>
   </body>
 </html>
