@@ -101,6 +101,25 @@ body {
     14 / 14px / 0 round;
   border-width: 14px;
   border-style: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.ecl-item {
+  padding-top: 1em;
+}
+
+.citation {
+  color: black;
+  text-decoration: underline;
+}
+
+.citation:hover {
+  text-decoration: none;
+}
+
+.citation:visited {
+  color: black;
 }
 
 /* Blog Page */
