@@ -82,7 +82,7 @@ html {
 /* Eclectica Page */
 
 #eclectica {
-  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAzUlEQVRYR+2YQQrFMAhEfw+Q+x80B2jhg5uAmJGM0TZvX3wZi4ZcvyJcRTznRVtr945D9d7/YU4nml5UBOVkUYx1zUTLiUYhnXMnGgUsGt3ysd50ouVE2WithhNl4xaNarn1T5qJphfVViRrI7kTTS+KnmwVaN0javHdRFksT5QFLCoi43hizc+xHrxCy4hqJ2Xhbv0RVXh/oukvJdp4ElhjCm49+sEq0LpH1OK7ibJYnigLWPTcngzciWrJ7kZ9w9dW6S5U0ayYb/hZeACZ1VBJd/BnXgAAAABJRU5ErkJggg==")
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAQNJREFUWEftmFEOxCAIROsBvP9BPcBusqn9YEPGsaDQtJ9NLI8ZCsRyJHlKEs5jGLTW+tmRVGvtx/gc0K5kz2yVqjIuVDQd6Colu3PTioYFXW25jDesaDpQb8u1mqQVDQu6ynJUk1DR8KDaLPeaSNOKhgdlM7P6udi4hT3wgp77rjrrH6OoldXyO6xAsEbDgHYQ2Z68+qeMR8/6NKBapuGsf0EVS+i/HrWNcNaHX0q09tTfe7Up2nr2gFUpsHHhZPLa+NODSseu2zw2M2/rp0GtwFAbRCUGazQM6O7tSbNavr/uR3dtTzQoavxeJTA6UP5unLVRGg7UC+jud+Ed/t0AVue/ONUwST1ngoMAAAAASUVORK5CYII=")
     14 / 14px / 0 round;
   border-width: 14px;
   border-style: solid;
@@ -91,7 +91,10 @@ html {
 }
 
 .ecl-item {
-  padding-top: 1em;
+  margin-top: 0.5em;
+  margin-right: 0.25em;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
 }
 
 .citation {
@@ -108,11 +111,13 @@ html {
 }
 
 /* Blog Page */
+
 #blog {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  flex: 1;
 }
 
 #blog-posts {
@@ -128,6 +133,13 @@ html {
 #blog-posts li:hover {
   text-decoration: none;
   cursor: pointer;
+}
+
+.blog-listing {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /*Blog Post Styling*/
