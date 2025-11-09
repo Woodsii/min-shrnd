@@ -55,6 +55,10 @@ html {
 #header * {
   margin: auto;
 }
+/* idk how i feel abt this */
+#ascii-title {
+  font-weight: bold;
+}
 
 /* Footer */
 
