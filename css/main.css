@@ -23,6 +23,7 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Set minimum height to full viewport height */
+  align-items: center;
 }
 
 /* Header */
@@ -124,13 +125,21 @@ html {
 }
 
 #blog-posts {
-  list-style-type: none;
+  display: inline-block;
+  margin: 2rem auto;
+  text-align: left;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 #blog-posts li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
   text-decoration: underline;
+  line-height: 1.2;
+  margin: 0.15rem 0;
 }
 
 #blog-posts li:hover {
@@ -138,15 +147,18 @@ html {
   cursor: pointer;
 }
 
-.blog-listing {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: left;
+#blog-posts li p {
+  margin: 0;
+  padding: 0;
 }
 
-.blog-listing * {
-  margin-left: 1em;
+#blog-posts li p:first-child {
+  font-style: italic;
+  min-width: 6ch;
+}
+
+#blog-posts li p:last-child {
+  font-style: bold;
 }
 
 /*Blog Post Styling*/
