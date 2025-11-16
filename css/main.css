@@ -65,7 +65,12 @@ html {
 
 #footer {
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  align-content: center;
+}
+
+#ascii-footer {
+  font-size: small;
 }
 
 /* Home page */
