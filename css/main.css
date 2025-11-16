@@ -9,8 +9,8 @@ html {
 }
 
 #page-content {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-top: 2rem;
   flex-grow: 1;
 }
@@ -82,6 +82,12 @@ html {
   margin: auto;
   padding: auto;
   justify-content: left;
+  font-size: small;
+  font-weight: bold;
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAwUlEQVQ4T9VV2xKFIAgE//+b5WAZZzF1GrSHmmmyYlcWuTARid7ceeon+1cMRA2L3XVduPZdTqOk4DwEINgR3TaqPCMPnZfocbNGO1OMckDZ2nIWoyhzjSkcSJSp4o4QYEwX+VymrHLd8Ca/Pe3oTiZ/K2Eh407iR720ytqbUlBRm+QnjWc+nHxD/rTrRGNbU4o1ccVtECb8VEXBQf0btWvEiVgydRvPvPOzEiryyahop0SX+GnnLzPH8nAwCazz/wBqdVUOtOMk9AAAAABJRU5ErkJggg==")
+    7 / 7px / 0 round;
+  border-width: 7px;
+  border-style: solid;
 }
 
 /* Eclectica Page */
