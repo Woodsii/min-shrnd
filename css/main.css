@@ -61,6 +61,12 @@ html {
   font-weight: bold;
 }
 
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
 /* Footer */
 
 #footer {
@@ -180,3 +186,5 @@ html {
 .blogpost-body {
   padding-top: 0.5em;
 }
+
+
