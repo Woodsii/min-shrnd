@@ -1,8 +1,8 @@
 // <![CDATA[
-var colours = new Array("#3b8734d9", "#dcb622d9", "#78661ed9"); // what colour are the blobs
+var colours = new Array("#3b8734d9", "#dcb622d9", "#78661ed9", "#C5C2FF"); // what colour are the blobs
 var speed = 70; // speed of animation, lower is faster
 var blobs = 50; // how many blobs are in the jar
-var size = 5; // maximum blob size
+var size = 7; // maximum blob size
 
 /***************************\
 *   Blobs in a Jar Effect   *

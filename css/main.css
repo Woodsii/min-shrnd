@@ -86,7 +86,7 @@ abbr[title] {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
-  gap: 3rem;
+  gap: 3em;
 }
 
 #ascii-scene {
@@ -179,6 +179,7 @@ abbr[title] {
 }
 
 /*Blog Post Styling*/
+
 .blogpost {
   font-size: 18px;
 }
@@ -187,4 +188,8 @@ abbr[title] {
   padding-top: 0.5em;
 }
 
-
+/* Project Page Styling */ 
+#blog {
+  display: flex;
+  flex-direction: column;
+}
