@@ -1,7 +1,8 @@
 body {
-  background-color: #fcffc2;
+  background-color: #f9ffdc;
   font-size: 18px;
   height: 100%;
+  color: #333333
 }
 
 html {
@@ -24,6 +25,8 @@ html {
   flex-direction: column;
   min-height: 100vh; /* Set minimum height to full viewport height */
   align-items: center;
+  margin: 0 auto;  
+  padding: 0 1rem; 
 }
 
 /* Header */
@@ -95,10 +98,9 @@ abbr[title] {
   justify-content: left;
   font-size: small;
   font-weight: bold;
-  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAwUlEQVQ4T9VV2xKFIAgE//+b5WAZZzF1GrSHmmmyYlcWuTARid7ceeon+1cMRA2L3XVduPZdTqOk4DwEINgR3TaqPCMPnZfocbNGO1OMckDZ2nIWoyhzjSkcSJSp4o4QYEwX+VymrHLd8Ca/Pe3oTiZ/K2Eh407iR720ytqbUlBRm+QnjWc+nHxD/rTrRGNbU4o1ccVtECb8VEXBQf0btWvEiVgydRvPvPOzEiryyahop0SX+GnnLzPH8nAwCazz/wBqdVUOtOMk9AAAAABJRU5ErkJggg==")
-    7 / 7px / 0 round;
-  border-width: 7px;
-  border-style: solid;
+  border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAACOUlEQVR4AcySAW4jMQwD0/v/n68eAQPYhO0EadGoWK5MiXLIRf89nv/9HxIwyo8e7gBvXfKK0bcu/u2lm1HSg6/xo2CU64MWnETcAdCAk27bvxndLnyquTNKWkB6wBmcPDIDaIE6eiA5GmA/Kztg6e+MLoIuZGeUtECPnAEpgX3OgBngPIMesMcZ5L7ciga4V/2d0Rp0e71i1GSkBGbgDORZc0+ujl2QfTkzUPwVo1780XozWkmGO1IB+WjVI7ei2cF5LU0v++4kV1rzm1GFLeps1EQaqySSUeXPdEO6PO7ZdD/7ydVXnY1Wo+sLo5lQrme51f71CyiaaurzvuTT6uOB0aXRlWD0a5gDo9TDGZiQM6jheHEG4/jWwy7IZXrA313mGF0aXcnOqIlIB5L/VhbuBt5vpQfk9Xs7ozXo9toZJQ1YEn3AOB5A/fTOaA26vWajXb7g1sdstNtHXPzMRvl/ACbiLKj2lwt+QLyPu0Hy5erZ6DLoRnZGSQdMmJ5P/dSdeO7L+U0gd7/4zqiCVvVmlHRAw5yBvJJKXqip564ZXmFPffGbURdb1JtRE2lUXgltjmp/HLdPzt3PfnJ1denNaAm6vDCaSeQmSp7eU6fe6tzqvjx1zpeK0aXRlWD0WbKcmyX7cudZ/XL25c/2So/ROnR/zUZNZtL07ty+OvvJT333c27fe+RVZ6PV6PraGTXpybOJU5f8pMt73bvqd0bzohb8HaP5BU5B1J3m9q9fUtE7Rt390/oNAAD//xXdW2QAAAAGSURBVAMAXjq4UYQ8NmsAAAAASUVORK5CYII=") 14 /  14px / 0 round;
+  border-width:  14px;
+  border-style:  solid;
 }
 
 /* Eclectica Page */
