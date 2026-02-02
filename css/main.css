@@ -195,3 +195,12 @@ abbr[title] {
   display: flex;
   flex-direction: column;
 }
+
+#projects-div h3 a {
+  color: #1e7716
+}
+
+#projects-div h3 {
+  text-decoration: underline;
+  color: #1e7716
+}
