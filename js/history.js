@@ -15,7 +15,16 @@ async function router() {
   try {
     const response = await fetch(fileToLoad);
     if (!response.ok) throw new Error("Page not found");
-    container.innerHTML = await response.text();
+
+    if (document.startViewTransition) {
+      const transition = document.startViewTransition(async () => {
+        container.innerHTML = await response.text();
+      });
+
+      await transition.finished;
+    } else {
+      container.innerHTML = await response.text();
+    }
   } catch (error) {
     container.innerHTML = "<h1>404 - Page not found</h1>";
   }
