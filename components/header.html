@@ -11,10 +11,10 @@
 
   <nav>
     <ul id="nav-list">
-        <li fx-action="./pages/home.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content" onclick="window.history.pushState({},'','/home')">[home]</li>                                                                                                                                                                                </li>
-        <li fx-action="./pages/blog.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content"  onclick="window.history.pushState({},'','/blog')">[blog]</li>
-        <li fx-action="./pages/projects.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content"  onclick="window.history.pushState({},'','/projects')">[projects]</li>
-        <li fx-action="./pages/eclectica.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content"  onclick="window.history.pushState({},'','/eclectica')">[eclectica]</li>
+        <li fx-action="./pages/home.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content" onclick="window.location.hash = 'home'">[home]</li>                                                                                                                                                                                </li>
+        <li fx-action="./pages/blog.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content"  onclick="window.location.hash = 'blog'">[blog]</li>
+        <li fx-action="./pages/projects.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content"  onclick="window.location.hash = 'projects'">[projects]</li>
+        <li fx-action="./pages/eclectica.html" fx-method="get" fx-trigger="click" fx-swap="innerHTML" fx-target="#page-content"  onclick="window.location.hash = 'eclectica'">[eclectica]</li>
     </ul>
   </nav>
 
