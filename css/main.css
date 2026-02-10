@@ -220,6 +220,12 @@ abbr[title] {
     margin: 1rem;
   }
 
+  p {
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+  }
+
   /* Home page styling */
   #home {
     padding: 0;
@@ -243,6 +249,10 @@ abbr[title] {
   }
 
   /* Header Styling */
+  #header {
+    margin: 1em;
+  }
+
   #desktop-ascii-title {
     display: none;
   }
@@ -253,6 +263,7 @@ abbr[title] {
     text-align: center;
     font-weight: bold;
     padding-bottom: 10px;
+    margin-bottom: 1em;
   }
 
   #nav-list {
