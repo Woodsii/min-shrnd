@@ -60,8 +60,15 @@ html {
   margin: auto;
 }
 /* idk how i feel abt this */
-#ascii-title {
+#desktop-ascii-title {
+  text-align: center;
   font-weight: bold;
+  width: auto;
+  display: block;
+}
+
+#mobile-ascii-title {
+  display: none;
 }
 
 abbr[title] {
@@ -102,6 +109,7 @@ abbr[title] {
     14 / 14px / 0 round;
   border-width: 14px;
   border-style: solid;
+  width: auto;
 }
 
 /* Eclectica Page */
@@ -204,4 +212,87 @@ abbr[title] {
 #projects-div h3 {
   text-decoration: underline;
   color: #1e7716;
+}
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    gap: 2em; /* Reduce gap slightly for mobile */
+  }
+
+  #page-content {
+    margin: 1rem;
+  }
+
+  #ascii-scene {
+    font-size: 8px; /* Smaller font to fit narrow screens */
+    max-width: 90%; /* Ensure it doesn't touch the screen edges */
+    overflow-x: hidden; /* Prevents side-scrolling if it barely fits */
+  }
+
+  #about-me {
+    width: 100%;
+    padding: 0 1em; /* Add padding so text doesn't hit the screen edge */
+    text-align: left; /* Optional: Center text on mobile */
+  }
+
+  #desktop-ascii-title {
+    display: none;
+  }
+
+  #mobile-ascii-title {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  #nav-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  #nav-list li {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  #blog {
+    width: 100%;
+    margin: 0;
+  }
+
+  #blog-posts {
+    display: block; /* Stop shrinking to fit content */
+    width: 90%; /* Take up 90% of the screen */
+    margin: 2rem auto; /* Keep it centered */
+  }
+
+  /* 1. Change the list item layout to a vertical stack */
+  #blog-posts li {
+    flex-direction: column; /* Stacks Date on top, Title on bottom */
+    align-items: flex-start; /* Aligns them both to the left */
+    gap: 0.2rem; /* Tiny space between Date and Title */
+    margin-bottom: 1.5rem; /* Adds breathing room between different posts */
+    border-bottom: 1px dotted #ccc; /* Optional: Adds a subtle separator line */
+    padding-bottom: 1rem;
+  }
+
+  /* 2. Optional: Style the date to look like a "label" */
+  #blog-posts li p:first-child {
+    font-size: 0.85em; /* Make date slightly smaller */
+    color: #666; /* Optional: Make it slightly lighter */
+    min-width: auto; /* Remove the desktop width constraint */
+  }
 }
