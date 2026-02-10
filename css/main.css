@@ -215,28 +215,34 @@ abbr[title] {
 }
 
 @media (max-width: 768px) {
-  #home {
-    flex-direction: column;
-    align-items: center; /* Centers items horizontally */
-    gap: 2em; /* Reduce gap slightly for mobile */
-  }
-
+  /* General Styling */
   #page-content {
     margin: 1rem;
   }
 
-  #ascii-scene {
-    font-size: 8px; /* Smaller font to fit narrow screens */
-    max-width: 90%; /* Ensure it doesn't touch the screen edges */
-    overflow-x: hidden; /* Prevents side-scrolling if it barely fits */
+  /* Home page styling */
+  #home {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
   }
 
   #about-me {
-    width: 100%;
-    padding: 0 1em; /* Add padding so text doesn't hit the screen edge */
-    text-align: left; /* Optional: Center text on mobile */
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
   }
 
+  #ascii-scene {
+    font-size: 8px;
+    max-width: 90%;
+    overflow-x: hidden;
+  }
+
+  /* Header Styling */
   #desktop-ascii-title {
     display: none;
   }
@@ -268,31 +274,30 @@ abbr[title] {
     cursor: pointer;
   }
 
+  /* Blog Page Styling */
   #blog {
     width: 100%;
     margin: 0;
   }
 
   #blog-posts {
-    display: block; /* Stop shrinking to fit content */
-    width: 90%; /* Take up 90% of the screen */
-    margin: 2rem auto; /* Keep it centered */
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
   }
 
-  /* 1. Change the list item layout to a vertical stack */
   #blog-posts li {
-    flex-direction: column; /* Stacks Date on top, Title on bottom */
-    align-items: flex-start; /* Aligns them both to the left */
-    gap: 0.2rem; /* Tiny space between Date and Title */
-    margin-bottom: 1.5rem; /* Adds breathing room between different posts */
-    border-bottom: 1px dotted #ccc; /* Optional: Adds a subtle separator line */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dotted #ccc;
     padding-bottom: 1rem;
   }
 
-  /* 2. Optional: Style the date to look like a "label" */
   #blog-posts li p:first-child {
-    font-size: 0.85em; /* Make date slightly smaller */
-    color: #666; /* Optional: Make it slightly lighter */
-    min-width: auto; /* Remove the desktop width constraint */
+    font-size: 0.85em;
+    color: #666;
+    min-width: auto;
   }
 }
