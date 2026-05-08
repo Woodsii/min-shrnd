@@ -99,6 +99,14 @@ abbr[title] {
   gap: 3em;
 }
 
+#home a {
+  color: #1e7716;
+}
+
+#home a::visited {
+  color: #1e7716;
+}
+
 #ascii-scene {
   margin: auto;
   padding: auto;
